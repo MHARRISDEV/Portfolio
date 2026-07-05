@@ -1,0 +1,570 @@
+/* Reset & Core Setup */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0a0a0a;
+  color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+/* Base Container to perfectly align text columns */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* Subtle Horizontal Dividers between sections */
+.section-divider {
+  border: 0;
+  height: 1px;
+  background-color: #1a1a1a;
+  margin: 0;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: rgba(10, 10, 10, 0.8);
+  backdrop-filter: blur(12px);
+  z-index: 100;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.logo a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 1.2rem;
+  letter-spacing: -0.5px;
+}
+
+nav a {
+  color: #777777;
+  text-decoration: none;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  margin-left: 32px;
+  transition: color 0.3s ease; /* Fluid transition effect */
+}
+
+nav a:hover {
+  color: #ffffff; /* Fade-in effect on text hover */
+}
+
+.section-spacing {
+  padding: 100px 0;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin-bottom: 60px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 perfect equal columns */
+  gap: 40px;
+}
+
+.skills-col h3 {
+  font-size: 0.75rem;
+  color: #555555;
+  letter-spacing: 1.5px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #1a1a1a;
+  margin-bottom: 24px;
+}
+
+.skills-col ul {
+  list-style: none;
+}
+
+.skills-col li {
+  color: #999999;
+  font-size: 1.1rem;
+  margin-bottom: 16px;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+/* Clean micro-interaction when pointing over tools */
+.skills-col li:hover {
+  color: #ffffff;
+  transform: translateX(4px);
+}
+
+.exp-row {
+  display: grid;
+  grid-template-columns: 3fr 7fr; /* Clean split layout mapping */
+  gap: 40px;
+  margin-bottom: 64px;
+}
+
+.company-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.exp-date {
+  font-size: 0.9rem;
+  color: #555555;
+  margin-top: 4px;
+}
+
+.job-role {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.exp-bullets {
+  padding-left: 18px;
+  color: #888888;
+}
+
+.exp-bullets li {
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.project-card {
+  background-color: transparent;
+  border: 1px solid #1a1a1a;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 320px;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover Effect: Brightens boundary wall and adds a dark charcoal backing layer */
+.project-card:hover {
+  border-color: #333333;
+  background-color: #0e0e0e;
+}
+
+.proj-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.proj-desc {
+  color: #888888;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.proj-tags {
+  display: flex;
+  gap: 8px;
+}
+
+.proj-tags span {
+  font-size: 0.75rem;
+  color: #666666;
+  border: 1px solid #222222;
+  padding: 4px 10px;
+}
+
+.contact-section {
+  text-align: center;
+  padding: 120px 0 60px 0;
+}
+
+.cta-heading {
+  font-size: 4rem;
+  font-weight: 800;
+  letter-spacing: -1.5px;
+  margin-bottom: 24px;
+}
+
+.cta-sub {
+  color: #666666;
+  max-width: 500px;
+  margin: 0 auto 40px auto;
+  line-height: 1.6;
+}
+
+.say-hello-btn {
+  display: inline-block;
+  padding: 16px 40px;
+  border: 1px solid #222222;
+  background-color: #111111;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.say-hello-btn:hover {
+  background-color: #ffffff;
+  color: #000000; /* Smooth contrast invert toggle */
+}
+
+.social-footer {
+  margin-top: 100px;
+  border-top: 1px solid #1a1a1a;
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+.social-footer a {
+  color: #555555;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: color 0.2s ease;
+}
+
+.social-footer a:hover {
+  color: #ffffff;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ==========================================================================
+   1. GLOBAL RESET & BASE STYLES
+   ========================================================================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #0a0a0a; /* Dark charcoal/black matte background */
+  color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  padding: 0 40px; /* Outer screen padding */
+}
+
+/* Base structural container to hold elements perfectly aligned down the page */
+.hero-section, .skills-section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 100px 0; /* Creates breathable vertical spacing between sections */
+}
+
+/* Subtle, clean horizontal dividers */
+.section-divider {
+  border: 0;
+  height: 1px;
+  background-color: #1a1a1a;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ==========================================================================
+   2. HERO SECTION STYLING
+   ========================================================================== */
+.sub-greeting {
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  color: #666666; /* Muted gray */
+  font-weight: 600;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.main-name {
+  font-size: 4rem; /* Massive typography scale */
+  font-weight: 800;
+  line-height: 1.05; /* Keeps the name stacked tightly together */
+  letter-spacing: -1.5px;
+  margin-bottom: 32px;
+}
+
+.hero-lead {
+  font-size: 1.35rem;
+  line-height: 1.4;
+  color: #b3b3b3; /* Bright gray contrast for the lead line */
+  max-width: 700px;
+  margin-bottom: 20px;
+}
+
+.hero-bio {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #777777; /* Softer gray color for descriptive paragraph text */
+  max-width: 700px;
+  margin-bottom: 48px;
+}
+
+/* CTA Buttons Layout Container */
+.cta-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  padding: 16px 32px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); /* Fluid animation transition curves */
+}
+
+.btn-solid {
+  background-color: #161616;
+  color: #ffffff;
+  border: 1px solid #262626;
+}
+
+.btn-solid:hover {
+  background-color: #ffffff;
+  color: #000000;
+  border-color: #ffffff;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #262626;
+}
+
+.btn-outline:hover {
+  border-color: #555555;
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+/* ==========================================================================
+   3. SKILLS SECTION & 4-COLUMN CSS GRID
+   ========================================================================== */
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin-bottom: 64px;
+}
+
+/* Turns the skills groups container into a perfect 4-column desktop layout */
+.skills-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 40px;
+  row-gap: 48px;
+}
+
+/* Makes sure the section header spans across all 4 grid columns */
+.skills-section .section-title {
+  grid-column: 1 / -1; 
+  margin-bottom: 16px;
+}
+
+.skills-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.group-category {
+  font-size: 0.75rem;
+  letter-spacing: 1.5px;
+  color: #555555; /* Dimmed uppercase column header tracking label */
+  font-weight: 600;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #1a1a1a;
+  margin-bottom: 24px;
+}
+
+.skills-list {
+  list-style: none; /* Strip out plain bullet points */
+}
+
+.skills-list li {
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: #999999; /* Neutral reading color state */
+  margin-bottom: 16px;
+  cursor: default;
+  transform: translateX(0);
+  transition: color 0.25s ease, transform 0.25s ease; /* Smooth interaction layout tracking */
+}
+
+/* Micro-interaction text hover effects */
+.skills-list li:hover {
+  color: #ffffff;
+  transform: translateX(4px); /* Gently slides out horizontally on hover */
+}
+
+/* ==========================================================================
+   4. RESPONSIVE MOBILE BREAKPOINT
+   ========================================================================== */
+@media (max-width: 768px) {
+  body {
+    padding: 0 24px;
+  }
+  
+  .main-name {
+    font-size: 2.75rem;
+  }
+  
+  /* Collapse the 4-column layout into 2 columns on tablets/mobile screens */
+  .skills-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+  }
+}
+
+/* ==========================================================================
+   5. EDUCATION SECTION STYLING
+   ========================================================================== */
+.edu-row {
+  display: grid;
+  grid-template-columns: 3fr 7fr; /* Matches the exact side-by-side split as your experience block */
+  gap: 40px;
+  margin-bottom: 64px;
+}
+
+.institution-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.edu-date {
+  font-size: 0.9rem;
+  color: #555555; /* Dimmed secondary labeling */
+  margin-top: 4px;
+}
+
+.edu-degree {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #e0e0e0;
+  margin-bottom: 16px;
+}
+
+.edu-bullets {
+  padding-left: 18px;
+  color: #888888; /* Soft readable gray for details */
+}
+
+.edu-bullets li {
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+/* Make sure the education columns stack cleanly on mobile screens too */
+@media (max-width: 768px) {
+  .edu-row {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+}
+
+.foot {
+  text-align:center;
+  font-size: 12px;
+  color: #888888;
+}
+
+/* Starting state: hidden and pushed down slightly */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1.2s cubic-bezier(0.215, 0.61, 0.355, 1), 
+              transform 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+  will-change: opacity, transform;
+}
+
+/* Active state: triggered when visible on screen */
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+nav a {
+  color: #777777;
+  text-decoration: none;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  margin-left: 32px;
+  /* Smooth transition for the color property */
+  transition: color 0.3s ease; 
+}
+
+nav a:hover {
+  color: #ffffff; /* Fades in cleanly */
+}
+
+.skills-list li {
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: #999999;
+  margin-bottom: 16px;
+  cursor: default;
+  /* Transition both the color change and the horizontal slide transform */
+  transition: color 0.25s ease, transform 0.25s ease; 
+}
+
+.skills-list li:hover {
+  color: #ffffff;
+  transform: translateX(6px); /* Clean CSS Transformation layout tracking */
+}
+
+.edu-row, .exp-row {
+  display: grid;
+  grid-template-columns: 3fr 7fr;
+  gap: 40px;
+  margin-bottom: 64px;
+  padding: 16px 0;
+  border-left: 2px solid transparent;
+  transition: border-color 0.3s ease, padding-left 0.3s ease;
+}
+
+/* Optional premium touch: highlights the section border when reading */
+.edu-row:hover, .exp-row:hover {
+  border-left-color: #333333;
+  padding-left: 12px;
+}
