@@ -1,225 +1,568 @@
 <!doctype html>
-<html lang="en" style="height: 100%">
-    <head>
-        <title>Muhammad Harris Portfolio</title>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080707">
+  <meta name="description" content="Muhammad Harris — Web Developer, App Developer & Designer.">
+  <title>Muhammad Harris // Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-            <link rel="stylesheet" href="style.css">
-            <header>
-                <div class="container nav-wrapper">
-                    <div class="logo"><a href="#">MH.</a></div>
-                    <nav>
-                        <a href="#skills">SKILLS</a>
-                        <a href="#experience">EXPERIENCE</a>
-                        <a href="#projects">PROJECTS</a>
-                        <a href="#education">EDUCATION</a>
-                        <a href="#contact">CONTACT</a>
-                    </nav>
-                </div>
-            </header>
-            <hr class="section-divider">
-            <main>
-                <section class="hero-section reveal">
-                    <span class="sub-greeting">HELLO, I'M</span>
-                    <h1 class="main-name">Muhammad Harris.</h1>
-                    <p class="hero-lead">Software Developer & Designer crafting minimal, precise digital experiences.</p>
-                    <p class="hero-bio">I specialize in building applications that blend high-performance engineering with exceptional aesthetic design. Clean code, sharp interfaces, and deep attention to detail.</p>
-                    <div class="cta-buttons">
-                        <a href="#" class="btn btn-solid">VIEW WORK</a>
-                        <a href="#" class="btn btn-outline">CONTACT ME</a>
-                    </div>
-                </section>
-                <hr class="section-divider">
+<body>
+  <div class="noise"></div>
+  <div class="grid"></div>
 
-                <section id="skills" class="skills-section reveal">
-                    <h2 class="section-title">Skills & Expertise.</h2>
-                    <!-- Category Item -->
-                     <div class="skills-group">
-                        <h3 class="group-category">LANGUAGES</h3>
-                        <ul class="skills-list">
-                            <li>TypeScript</li>
-                            <li>JavaScript</li>
-                            <li>Python</li>
-                            <li>Go</li>
-                            <li>Rust</li>
-                            <li>HTML/CSS</li>
-                        </ul>
-                    </div>
-                    
-                    <!-- Category Item -->
-                     <div class="skills-group">
-                        <h3 class="group-category">FRONTEND</h3>
-                        <ul class="skills-list">
-                            <li>React</li>
-                            <li>Next.js</li>
-                            <li>Vue</li>
-                            <li>Tailwind CSS</li>
-                            <li>Framer Motion</li>
-                            <li>Zustand</li>
-                        </ul>
-                    </div>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="Muhammad Harris home">
+        <span class="brand-box">MH</span>
+        <span class="brand-copy">
+          <strong>MUHAMMAD HARRIS</strong>
+          <small>SYS.VER_2.0 // WEB • APP • GAME</small>
+        </span>
+      </a>
 
-                    <!-- Category Item -->
-                     <div class="skills-group">
-                        <h3 class="group-category">BACKEND</h3>
-                        <ul class="skills-list">
-                            <li>Node.js</li>
-                            <li>Express</li>
-                            <li>PostgreSQL</li>
-                            <li>Redis</li>
-                            <li>Docker</li>
-                            <li>AWS</li>
-                        </ul>
-                    </div>
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#profile">PROFILE</a>
+        <a href="#projects">PROJECTS</a>
+        <a href="#stack">STACK</a>
+        <a href="#contact">CONTACT</a>
+      </nav>
 
-                    <!-- Category Item -->
-                     <div class="skills-group">
-                        <h3 class="group-category">DESIGN</h3>
-                        <ul class="skills-list">
-                            <li>Figma</li>
-                            <li>UI/UX</li>
-                            <li>Wireframing</li>
-                            <li>Prototyping</li>
-                            <li>Design Systems</li>
-                        </ul>
-                    </div>
-                </section>
-                <hr class="section-divider">
+      <button class="menu-btn" id="menuBtn" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
 
-                <section id="experience" class="container section-spacing reveal">
-                    <h2 class="section-title">Experience.</h2>
-                    <div class="exp-row">
-                        <div class="exp-left">
-                            <h3 class="company-name">Acme Corp</h3>
-                            <p class="exp-date">2021 — Present</p>
-                        </div>
-                        <div class="exp-right">
-                            <h4 class="job-role">Senior Frontend Engineer</h4>
-                            <ul class="exp-bullets">
-                                <li>Led the redesign and migration of the core platform to React and Next.js.</li>
-                                <li>Established a comprehensive design system used across 5 independent product teams.</li>
-                                <li>Improved performance metrics (LCP, CLS) by 40% through rigorous code splitting and optimized rendering.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="exp-row">
-                        <div class="exp-left">
-                            <h3 class="company-name">Nexus Technologies</h3>
-                            <p class="exp-date">2018 — 2021</p>
-                        </div>
-                        <div class="exp-right">
-                            <h4 class="job-role">Software Developer</h4>
-                            <ul class="exp-bullets">
-                                <li>Developed full-stack features using Node.js, React, and PostgreSQL.</li>
-                                <li>Architected a scalable real-time notification system handling 10k+ concurrent connections.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-                <hr class="section-divider">
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#profile">PROFILE</a>
+      <a href="#projects">PROJECTS</a>
+      <a href="#stack">STACK</a>
+      <a href="#contact">CONTACT</a>
+    </div>
+  </header>
 
-                <section id="projects" class="container section-spacing reveal">
-                    <h2 class="section-title">Selected Projects.</h2>
-                    <div class="projects-grid">
-                        <div class="project-card">
-                            <h3 class="proj-title">Onyx E-Commerce</h3>
-                            <p class="proj-desc">A minimal, high-performance headless e-commerce storefront. Features seamless page transitions, heavily optimized image loading, and a custom cart implementation.</p>
-                            <div class="proj-tags">
-                                <span>Next.js</span>
-                                <span>Tailwind</span>
-                                <span>Stripe API</span>
-                            </div>
-                        </div>
+  <main id="top">
 
-                        <div class="project-card 2">
-                            <h3 class="proj-title 2">Aether Dashboard</h3>
-                            <p class="proj-desc 2">Financial analytics dashboard with real-time data visualization. Designed with a deep dark mode aesthetic, focusing on data density without clutter.</p>
-                            <div class="proj-tags 2">
-                                <span>React</span>
-                                <span>Recharts</span>
-                                <span>WebSockets</span>
-                            </div>
-                        </div>
+    <!-- HERO -->
+    <section class="hero container reveal">
+      <div class="hero-copy">
+        <p class="eyebrow">// HELLO, I'M</p>
+        <h1><span>MUHAMMAD</span><br>HARRIS</h1>
+        <p class="handle">@MHARRISDEV</p>
+        <p class="role">[ WEB DEVELOPER • APP DEVELOPER •<br> DESIGN • GODOT GAME DEV ]</p>
 
-                        <div class="projects-grid 3">
-                            <div class="project-card 3">
-                                <h3 class="proj-title 3">Lumina API</h3>
-                                <p class="proj-desc 3">A fast, robust REST API for managing smart home devices. Includes comprehensive authentication, rate limiting, and extensive logging.</p>
-                                <div class="proj-tags 3">
-                                    <span>Go</span>
-                                    <span>PostgreSQL</span>
-                                    <span>Redis</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <hr class="section-divider">
-                <section id="education" class="container section-spacing reveal">
-                    <h2 class="section-title">Education.</h2>
-                    <div class="edu-row">
-                        <div class="edu-left">
-                            <h3 class="institution-name">Islamia College</h3>
-                            <p class="edu-date">Intermediate (ICS-PHY)</p>
-                        </div>
-                        <div class="edu-right">
-                            <h4 class="edu-degree">Faculty of Information Technology</h4>
-                            <ul class="edu-bullets">
-                                <li>Specialized in Computer Science, Mathematics, and Physics.</li>
-                                <li>Graduated with a cumulative score of 52%.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="edu-row">
-                        <div class="edu-left">
-                            <h3 class="institution-name">MS High School</h3>
-                            <p class="edu-date">Matriculation</p>
-                        </div>
-                        <div class="edu-right">
-                            <h4 class="edu-degree">Science Discipline</h4>
-                            <ul class="edu-bullets">
-                                <li>Focused coursework in Computer Science, Mathematics, and Physics foundations.</li>
-                                <li>Graduated with distinction scoring 75%.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-                <hr class="section-divider">
-                <section id="contact" class="container contact-section reveal">
-                    <h2 class="cta-heading">Let's build something.</h2>
-                    <p class="cta-sub">Currently open for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
-                    <a href="mailto:your.email@example.com" class="say-hello-btn">SAY HELLO</a>
-                    <footer class="social-footer">
-                        <a href="https://github.com/mharrisdev">GITHUB</a>
-                        <a href="https://www.linkedin.com/in/haris-khalid-b3ba9b390/">LINKEDIN</a>
-                        <a href="https://www.instagram.com/harryoffside/">INSTAGRAM</a>
-                        <a href="https://x.com/mharrisdev">X</a>
-                    </footer>
-                </section>
-            </main>
-            <footer>
-                <p class="foot">© 2026 Harry</p>
-            </footer>
-            <script>document.addEventListener("DOMContentLoaded", () => {
-                const observerOptions = {
-                    root: null, // uses the viewport
-                    rootMargin: "0px",
-                    threshold: 0.15 // triggers when 15% of the section is visible
-                    };
-                    const observer = new IntersectionObserver((entries, observer) => {
-                        entries.forEach(entry => {
-                            if (entry.isIntersecting) {
-                                entry.target.classList.add("active");
-                                observer.unobserve(entry.target); // Stops observing once animated
-                                }
-                            });
-                        }, observerOptions);
-                        // Grab all elements with the 'reveal' class and observe them
-                        const hiddenElements = document.querySelectorAll(".reveal");
-                        hiddenElements.forEach(el => observer.observe(el));
-                        });
-                        </script>
-                        </body>
-                    </head>
-                    </html>
+        <p class="hero-intro">
+          Building clean, useful digital experiences while learning how
+          every layer of the web and app stack actually works.
+        </p>
+
+        <p class="hero-description">
+          I focus on frontend development, mobile applications, interactive
+          interfaces, and practical software projects. I care about clean
+          structure, smooth interaction, and designs that do not look like
+          they were assembled by twelve unrelated CSS tutorials.
+        </p>
+
+        <div class="hero-actions">
+          <a class="cyber-btn primary" href="#projects">VIEW MY WORK<span><svg class="humbleicons hi-arrow-right-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6.343 17.657 17.657 6.343m0 0v8.485m0-8.485H9.172"/></svg></span></a>
+          <a class="cyber-btn" href="https://github.com/mharrisdev" target="_blank" rel="noopener">GITHUB<span><svg class="humbleicons hi-brand-github" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.5 21c2-2-.5-6 3.5-6m0 0c-3 0-7-1-7-5 0-1.445.116-2.89.963-4V3L9 4.283C9.821 4.101 10.81 4 12 4s2.178.1 3 .283L18 3v2.952c.88 1.116 1 2.582 1 4.048 0 4-4 5-7 5Zm0 0c4 0 1.5 4 3.5 6M3 15c3 0 1.5 4 6 3"/></svg></span></a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="status-card">
+          <div class="status-dot"></div>
+          <div>
+            <small>STATUS</small>
+            <strong>BUILDING PROJECTS</strong>
+          </div>
+        </div>
+
+        <div class="status-card focus-card">
+          <div class="chip-icon">⌘</div>
+          <div>
+            <small>FOCUS</small>
+            <strong>WEB × APP × DESIGN × GAME</strong>
+          </div>
+        </div>
+
+        <div class="portrait-orbit">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+
+          <div class="portrait-frame">
+            <div class="frame-corner top-left"></div>
+            <div class="frame-corner top-right"></div>
+            <div class="frame-corner bottom-left"></div>
+            <div class="frame-corner bottom-right"></div>
+
+            <div class="portrait-placeholder">
+              <img src="harry.jpg" alt="Muhammad Harris portrait" loading="lazy">
+              <span>MH</span>
+            </div>
+
+            <span class="frame-tag tag-one">[01]</span>
+            <span class="frame-tag tag-two">[MH]</span>
+            <span class="frame-plus">[+]</span>
+          </div>
+
+          <span class="rad-label">[ 045° RAD ]</span>
+          <span class="sys-label">[ 225° SYS ]</span>
+        </div>
+
+        <div class="core-pill">CORE: <strong>ACTIVE</strong></div>
+        <div class="node-pill">⌁ NODE: WEB_APP_HARRIS</div>
+      </div>
+    </section>
+
+    <div class="section-rule"></div>
+
+    <!-- PROFILE -->
+    <section class="section container reveal" id="profile">
+      <div class="section-index">// 01 / PROFILE</div>
+      <h2>ABOUT ME</h2>
+
+      <div class="profile-grid">
+        <div class="philosophy">
+          <p class="mini-label">CORE OPERATING PHILOSOPHY</p>
+          <div class="process">
+            <span>Learn</span><b><svg class="humbleicons hi-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 12h16m0 0-6 6m6-6-6-6"/></svg></b>
+            <span>Build</span><b><svg class="humbleicons hi-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 12h16m0 0-6 6m6-6-6-6"/></svg></b>
+            <span>Break</span><b><svg class="humbleicons hi-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 12h16m0 0-6 6m6-6-6-6"/></svg></b>
+            <span>Improve</span>
+          </div>
+        </div>
+
+        <div class="profile-text">
+          <p>
+            I'm a developer building my skills across web development,
+            app development, UI design, and practical software engineering.
+            My approach is simple: understand the fundamentals, build real
+            things, break them, fix them, and keep improving.
+          </p>
+          <p>
+            I enjoy working where code and visual design meet. That means
+            responsive websites, mobile applications, interactive interfaces,
+            game experiments, and larger full-stack systems.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-title">// EXECUTION TIMELINE</div>
+
+        <article class="timeline-row">
+          <div class="timeline-date">2026 // CURRENT</div>
+          <div>
+            <h3>Full-Stack & App Development</h3>
+            <p>Building responsive web experiences, React Native applications, and real-world software projects.</p>
+          </div>
+        </article>
+
+        <article class="timeline-row">
+          <div class="timeline-date">2026 // MILESTONE</div>
+          <div>
+            <h3>Interactive Systems & UI Engineering</h3>
+            <p>Exploring frontend architecture, mobile interfaces, backend systems, APIs, and interactive product design.</p>
+          </div>
+        </article>
+
+        <article class="timeline-row">
+          <div class="timeline-date">2025 // FOUNDATION</div>
+          <div>
+            <h3>Web Development Foundations</h3>
+            <p>Built a foundation in HTML, CSS, JavaScript concepts, responsive layouts, and visual interface design.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="spec-grid">
+        <div class="spec-card">
+          <span>[ CURRENT DOMAIN ]</span>
+          <strong><svg class="humbleicons hi-globe" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 0 1-9 9m9-9a9 9 0 0 0-9-9m9 9H3m9 9a9 9 0 0 1-9-9m9 9c1.933 0 3.5-4.03 3.5-9S13.933 3 12 3m0 18c-1.933 0-3.5-4.03-3.5-9s1.567-9 3.5-9m-9 9a9 9 0 0 1 9-9"/></svg>Web + <svg class="humbleicons hi-brand-android" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 8.5h8m-8 0v8h2m-2-8s0-1.815 1.223-3M16 8.5v8h-2m2-8s0-1.815-1.223-3m3.723 4V14m-13-4.5V14m8.5 5.5v-3m0 0h-4m0 3v-3m4.777-11c-.592-.574-1.472-1-2.777-1-1.305 0-2.185.426-2.777 1m5.554 0L16 4M9.223 5.5 8 4"/></svg>App Development</strong>
+          <small>STATE: ACTIVE BUILD</small>
+        </div>
+        <div class="spec-card">
+          <span>[ PRIMARY DOMAINS ]</span>
+          <strong>Frontend • Mobile • UI</strong>
+          <small>DOMAIN: DIGITAL SYSTEMS</small>
+        </div>
+        <div class="spec-card">
+          <span>[ CURRENT MODE ]</span>
+          <strong>Building & Learning</strong>
+          <small>STATE: CONTINUOUS FLOW</small>
+        </div>
+        <div class="spec-card">
+          <span>[ REGION NODE ]</span>
+          <strong>Pakistan</strong>
+          <small>TIMEZONE: UTC+05:00</small>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-rule"></div>
+
+    <!-- PROJECTS -->
+    <section class="section container reveal" id="projects">
+      <div class="section-index">// 02 / SELECTED PROJECTS</div>
+      <h2>PROJECT ARCHIVE</h2>
+      <p class="section-lead">
+        Real projects, experiments, and systems. The collection will grow as the code does.
+      </p>
+
+      <div class="filter-bar" role="tablist" aria-label="Project filters">
+        <button class="filter active" data-filter="all">ALL</button>
+        <button class="filter" data-filter="web">WEB</button>
+        <button class="filter" data-filter="app">APP</button>
+        <button class="filter" data-filter="game">GAME</button>
+        <button class="filter" data-filter="system">SYSTEMS</button>
+      </div>
+
+      <div class="project-list">
+
+        <article class="project-card" data-category="web" data-project="maisondeiram">
+          <div class="project-top">
+            <span>SYS_ID: 001 // WEB<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-browser-chrome" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M16 8a8 8 0 0 1-7.022 7.94l1.902-7.098a3 3 0 0 0 .05-1.492A3 3 0 0 0 10.237 6h5.511A8 8 0 0 1 16 8M0 8a8 8 0 0 0 7.927 8l1.426-5.321a3 3 0 0 1-.723.255 3 3 0 0 1-1.743-.147 3 3 0 0 1-1.043-.7L.633 4.876A8 8 0 0 0 0 8m5.004-.167L1.108 3.936A8.003 8.003 0 0 1 15.418 5H8.066a3 3 0 0 0-1.252.243 2.99 2.99 0 0 0-1.81 2.59M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4"/>
+            </svg></span>
+            <span>STATUS: ACTIVE BUILD + BUILDING</span>
+          </div>
+          <h3>MAISON DE IRAM</h3>
+          <p>
+            An elegant, high-end luxury fashion and couture e-commerce experience showcasing curated seasonal collections, bespoke tailoring services, and interactive product lookbooks.
+          </p>
+          <div class="tags">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>NETLIFY</span>
+          </div>
+          <div class="project-actions">
+            <button class="spec-btn" data-project="maisondeiram">[ VIEW SYSTEM SPEC ]</button>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="web" data-project="cousinkart">
+          <div class="project-top">
+            <span>SYS_ID: 002 // WEB<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-browser-chrome" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M16 8a8 8 0 0 1-7.022 7.94l1.902-7.098a3 3 0 0 0 .05-1.492A3 3 0 0 0 10.237 6h5.511A8 8 0 0 1 16 8M0 8a8 8 0 0 0 7.927 8l1.426-5.321a3 3 0 0 1-.723.255 3 3 0 0 1-1.743-.147 3 3 0 0 1-1.043-.7L.633 4.876A8 8 0 0 0 0 8m5.004-.167L1.108 3.936A8.003 8.003 0 0 1 15.418 5H8.066a3 3 0 0 0-1.252.243 2.99 2.99 0 0 0-1.81 2.59M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4"/>
+            </svg></span>
+            <span>STATUS: ACTIVE BUILD</span>
+          </div>
+          <h3>COUSINKART</h3>
+          <p>
+            A full-featured e-commerce platform designed for streamlined online shopping, featuring dynamic product listings, interactive cart management, and modern user interface components.
+          </p>
+          <div class="tags">
+            <span>HTML5</span><span>JavaScript</span><span>CSS3</span><span>Mobile Web</span><span>NETLIFY</span>
+          </div>
+          <div class="project-actions">
+            <button class="spec-btn" data-project="cousinkart">[ VIEW SYSTEM SPEC ]</button>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="app" data-project="vroomgolf">
+          <div class="project-top">
+            <span>SYS_ID: 003 // APP<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-android" viewBox="0 0 16 16">
+  <path d="M2.76 3.061a.5.5 0 0 1 .679.2l1.283 2.352A8.9 8.9 0 0 1 8 5a8.9 8.9 0 0 1 3.278.613l1.283-2.352a.5.5 0 1 1 .878.478l-1.252 2.295C14.475 7.266 16 9.477 16 12H0c0-2.523 1.525-4.734 3.813-5.966L2.56 3.74a.5.5 0 0 1 .2-.678ZM5 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2m6 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+            </svg></span>
+            <span>STATUS: BUILDING</span>
+          </div>
+          <h3>VROOMGOLF</h3>
+          <p>
+            Golf-cart rideshare platform concept covering a mobile app,
+            real-time ride flow, maps, payments, and an administrative web panel.
+          </p>
+          <div class="tags">
+            <span>React Native</span><span>Expo</span><span>TypeScript</span><span>Realtime</span>
+          </div>
+          <div class="project-actions">
+            <button class="spec-btn" data-project="vroomgolf">[ VIEW SYSTEM SPEC ]</button>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="game" data-project="fps">
+          <div class="project-top">
+            <span>SYS_ID: 004 // GAME<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-controller" viewBox="0 0 16 16">
+  <path d="M11.5 6.027a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m2.5-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m-6.5-3h1v1h1v1h-1v1h-1v-1h-1v-1h1z"/>
+  <path d="M3.051 3.26a.5.5 0 0 1 .354-.613l1.932-.518a.5.5 0 0 1 .62.39c.655-.079 1.35-.117 2.043-.117.72 0 1.443.041 2.12.126a.5.5 0 0 1 .622-.399l1.932.518a.5.5 0 0 1 .306.729q.211.136.373.297c.408.408.78 1.05 1.095 1.772.32.733.599 1.591.805 2.466s.34 1.78.364 2.606c.024.816-.059 1.602-.328 2.21a1.42 1.42 0 0 1-1.445.83c-.636-.067-1.115-.394-1.513-.773-.245-.232-.496-.526-.739-.808-.126-.148-.25-.292-.368-.423-.728-.804-1.597-1.527-3.224-1.527s-2.496.723-3.224 1.527c-.119.131-.242.275-.368.423-.243.282-.494.575-.739.808-.398.38-.877.706-1.513.773a1.42 1.42 0 0 1-1.445-.83c-.27-.608-.352-1.395-.329-2.21.024-.826.16-1.73.365-2.606.206-.875.486-1.733.805-2.466.315-.722.687-1.364 1.094-1.772a2.3 2.3 0 0 1 .433-.335l-.028-.079zm2.036.412c-.877.185-1.469.443-1.733.708-.276.276-.587.783-.885 1.465a14 14 0 0 0-.748 2.295 12.4 12.4 0 0 0-.339 2.406c-.022.755.062 1.368.243 1.776a.42.42 0 0 0 .426.24c.327-.034.61-.199.929-.502.212-.202.4-.423.615-.674.133-.156.276-.323.44-.504C4.861 9.969 5.978 9.027 8 9.027s3.139.942 3.965 1.855c.164.181.307.348.44.504.214.251.403.472.615.674.318.303.601.468.929.503a.42.42 0 0 0 .426-.241c.18-.408.265-1.02.243-1.776a12.4 12.4 0 0 0-.339-2.406 14 14 0 0 0-.748-2.295c-.298-.682-.61-1.19-.885-1.465-.264-.265-.856-.523-1.733-.708-.85-.179-1.877-.27-2.913-.27s-2.063.091-2.913.27"/>
+            </svg></span>
+            <span>STATUS: EXPERIMENTAL</span>
+          </div>
+          <h3>MOBILE FPS</h3>
+          <p>
+            First-person survival shooter experiment focused on movement,
+            combat, environments, mobile controls, and a fast survival loop.
+          </p>
+          <div class="tags">
+            <span>Godot</span><span>3D</span><span>FPS</span><span>Mobile</span>
+          </div>
+          <div class="project-actions">
+            <button class="spec-btn" data-project="fps">[ VIEW SYSTEM SPEC ]</button>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="web" data-project="portfolio">
+          <div class="project-top">
+            <span>SYS_ID: 005 // WEB<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-browser-chrome" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M16 8a8 8 0 0 1-7.022 7.94l1.902-7.098a3 3 0 0 0 .05-1.492A3 3 0 0 0 10.237 6h5.511A8 8 0 0 1 16 8M0 8a8 8 0 0 0 7.927 8l1.426-5.321a3 3 0 0 1-.723.255 3 3 0 0 1-1.743-.147 3 3 0 0 1-1.043-.7L.633 4.876A8 8 0 0 0 0 8m5.004-.167L1.108 3.936A8.003 8.003 0 0 1 15.418 5H8.066a3 3 0 0 0-1.252.243 2.99 2.99 0 0 0-1.81 2.59M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4"/>
+            </svg></span>
+            <span>STATUS: ITERATING</span>
+          </div>
+          <h3>PORTFOLIO SYSTEM</h3>
+          <p>
+            Personal portfolio redesign combining editorial typography,
+            technical interface details, responsive layouts, and subtle motion.
+          </p>
+          <div class="tags">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>UI/UX</span>
+          </div>
+          <div class="project-actions">
+            <button class="spec-btn" data-project="portfolio">[ VIEW SYSTEM SPEC ]</button>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="system" data-project="support">
+          <div class="project-top">
+            <span>SYS_ID: 006 // WEB<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-3" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 2 7h5.5V6A1.5 1.5 0 0 1 6 4.5zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5zM0 11.5A1.5 1.5 0 0 1 1.5 10h1A1.5 1.5 0 0 1 4 11.5v1A1.5 1.5 0 0 1 2.5 14h-1A1.5 1.5 0 0 1 0 12.5zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm4.5.5A1.5 1.5 0 0 1 7.5 10h1a1.5 1.5 0 0 1 1.5 1.5v1A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z"/>
+            </svg></span>
+            <span>STATUS: BUILDING</span>
+          </div>
+          <h3>LIVE SUPPORT PLATFORM</h3>
+          <p>
+            A customer-support system concept exploring live chat flows,
+            agent interfaces, conversations, status states, and operational tools.
+          </p>
+          <div class="tags">
+            <span>Web</span><span>UI</span><span>Realtime</span><span>Support</span>
+          </div>
+          <div class="project-actions">
+            <button class="spec-btn" data-project="support">[ VIEW SYSTEM SPEC ]</button>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <div class="section-rule"></div>
+
+    <!-- STACK -->
+    <section class="section container reveal" id="stack">
+      <div class="section-index">// 03 / TECHNICAL STACK</div>
+      <h2>CAPABILITIES & DOMAINS</h2>
+      <p class="section-lead">
+        Honest proficiency levels. No suspicious 97% JavaScript progress bars invented five minutes before a job application.
+      </p>
+
+      <div class="tier-legend">
+        <span><i class="tier-dot one"></i> TIER 1: WORKING WITH</span>
+        <span><i class="tier-dot two"></i> TIER 2: ACTIVE LEARNING</span>
+        <span><i class="tier-dot three"></i> TIER 3: EXPLORING</span>
+      </div>
+
+      <div class="stack-grid">
+        <div class="stack-domain">
+          <span class="domain-no">DOMAIN // 01</span>
+          <h3>LANGUAGES</h3>
+          <p>Core Programming</p>
+          <ul>
+            <li><span>HTML5</span><b>WORKING WITH</b></li>
+            <li><span>CSS3</span><b>WORKING WITH</b></li>
+            <li><span>JavaScript</span><b>LEARNING</b></li>
+            <li><span>Python</span><b>LEARNING</b></li>
+          </ul>
+        </div>
+
+        <div class="stack-domain">
+          <span class="domain-no">DOMAIN // 02</span>
+          <h3>FRONTEND</h3>
+          <p>Interfaces & Interaction</p>
+          <ul>
+            <li><span>React</span><b>LEARNING</b></li>
+            <li><span>Next.js</span><b>LEARNING</b></li>
+            <li><span>Tailwind CSS</span><b>LEARNING</b></li>
+            <li><span>Responsive UI</span><b>WORKING WITH</b></li>
+          </ul>
+        </div>
+
+        <div class="stack-domain">
+          <span class="domain-no">DOMAIN // 03</span>
+          <h3>MOBILE</h3>
+          <p>Application Development</p>
+          <ul>
+            <li><span>React Native</span><b>LEARNING</b></li>
+            <li><span>Expo</span><b>LEARNING</b></li>
+            <li><span>TypeScript</span><b>LEARNING</b></li>
+            <li><span>Expo Router</span><b>LEARNING</b></li>
+          </ul>
+        </div>
+
+        <div class="stack-domain">
+          <span class="domain-no">DOMAIN // 04</span>
+          <h3>BACKEND</h3>
+          <p>Systems & Data</p>
+          <ul>
+            <li><span>Node.js</span><b>LEARNING</b></li>
+            <li><span>APIs</span><b>LEARNING</b></li>
+            <li><span>PostgreSQL</span><b>LEARNING</b></li>
+            <li><span>Supabase</span><b>LEARNING</b></li>
+          </ul>
+        </div>
+
+        <div class="stack-domain">
+          <span class="domain-no">DOMAIN // 05</span>
+          <h3>DESIGN</h3>
+          <p>Visual Systems</p>
+          <ul>
+            <li><span>UI/UX</span><b>LEARNING</b></li>
+            <li><span>Figma</span><b>WORKING WITH</b></li>
+            <li><span>Wireframing</span><b>LEARNING</b></li>
+            <li><span>Visual Design</span><b>WORKING WITH</b></li>
+          </ul>
+        </div>
+
+        <div class="stack-domain">
+          <span class="domain-no">DOMAIN // 06</span>
+          <h3>TOOLS</h3>
+          <p>Workflow & Environment</p>
+          <ul>
+            <li><span>Git / GitHub</span><b>LEARNING</b></li>
+            <li><span>Termux</span><b>WORKING WITH</b></li>
+            <li><span>VS Code</span><b>LEARNING</b></li>
+            <li><span>Docker</span><b>EXPLORING</b></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-rule"></div>
+
+    <!-- CONTACT -->
+    <section class="section contact container reveal" id="contact">
+      <div class="section-index">// 04 / TRANSMISSION</div>
+      <h2>LET'S BUILD SOMETHING</h2>
+      <p class="section-lead">
+        Open for opportunities, collaborations, freelance work, and interesting technical projects.
+      </p>
+
+      <div class="contact-grid">
+        <form class="terminal-form" id="contactForm">
+          <div class="terminal-head">
+            <span class="window-dot red"></span>
+            <span class="window-dot yellow"></span>
+            <span class="window-dot green"></span>
+            <span class="terminal-title">TTY: mharris-node</span>
+          </div>
+
+          <label>// SENDER_NAME
+            <input type="text" name="name" placeholder="e.g. John Doe" required>
+          </label>
+
+          <label>// EMAIL_ADDRESS
+            <input type="email" name="email" placeholder="name@example.com" required>
+          </label>
+
+          <label>// SUBJECT_HEADER
+            <input type="text" name="subject" placeholder="Project Collaboration / Technical Discussion" required>
+          </label>
+
+          <label>// MESSAGE_PAYLOAD
+            <textarea name="message" rows="7" placeholder="Describe your project, collaboration idea, or inquiry..." required></textarea>
+          </label>
+
+          <div class="hp-field" aria-hidden="true">
+            <label>Leave this field empty
+              <input type="text" name="website" tabindex="-1" autocomplete="off">
+            </label>
+          </div>
+
+          <div class="form-actions">
+          <button class="transmit-btn" id="sendBtn" type="submit">[ CONNECT WITH ME<svg class="humbleicons hi-chat" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><g fill="currentColor"><path d="m4 19-.93-.37a1 1 0 0 0 1.125 1.35L4 19zm4.706-.936.474-.881-.317-.17-.352.07.195.98zm-3.082-3.147.93.37.163-.414-.196-.399-.897.443zM19 12c0 3.246-2.853 6-6.53 6v2c4.641 0 8.53-3.514 8.53-8h-2zM5.941 12c0-3.246 2.854-6 6.53-6V4C7.83 4 3.94 7.514 3.94 12h2zm6.53-6C16.147 6 19 8.754 19 12h2c0-4.486-3.889-8-8.53-8v2zm0 12c-1.205 0-2.328-.3-3.291-.817l-.948 1.761A8.934 8.934 0 0 0 12.471 20v-2zm-8.276 1.98 4.706-.936-.39-1.961-4.706.936.39 1.962zm2.326-5.506A5.564 5.564 0 0 1 5.94 12h-2c0 1.2.282 2.338.786 3.36l1.794-.886zm-1.826.073L3.07 18.631l1.858.738 1.624-4.083-1.858-.739z"/><circle cx="9" cy="12" r="1"/><circle cx="12.5" cy="12" r="1"/><circle cx="16" cy="12" r="1"/></g></svg>]</button>
+          <button type="button" class="mail-btn" id="mailBtn">[ OR SEND VIA MY EMAIL APP ]</button>
+          </div>
+          <p class="form-note" id="formNote" role="status" aria-live="polite">&gt; ready_for_transmission</p>
+        </form>
+
+        <div class="contact-terminal">
+          <div class="terminal-head">
+            <span class="window-dot red"></span>
+            <span class="window-dot yellow"></span>
+            <span class="window-dot green"></span>
+            <span class="terminal-title">connection.log</span>
+          </div>
+          <p>&gt; establish_remote_link --node=muhammad.harris</p>
+          <p class="success">&gt; connection established: [SECURE // ONLINE]</p>
+          <p>&gt; location: Pakistan [National Node]</p>
+          <p>&gt; discipline: Web / App / Design</p>
+          <p>&gt; response_window: standard working hours</p>
+          <p class="success">&gt; ready_for_transmission<span class="cursor"></span></p>
+
+          <div class="contact-links">
+            <a href="mailto:mharriskhalid@gmail.com" id="directMail" data-email="mharriskhalid@gmail.com">
+              <strong>
+                <svg class="humbleicons hi-mail" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 7v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7m18 0a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1m18 0-7.72 6.433a2 2 0 0 1-2.56 0L3 7"/></svg> DIRECT MAIL
+              </strong>
+            </a>
+
+            <a href="https://www.linkedin.com/in/haris-khalid-b3ba9b390/" target="_blank" rel="noopener">
+              <strong>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/></svg> PROFESSIONAL NETWORK
+              </strong>
+            </a>
+
+            <a href="https://github.com/mharrisdev" target="_blank" rel="noopener">
+              <strong>
+                <svg class="humbleicons hi-brand-github" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.5 21c2-2-.5-6 3.5-6m0 0c-3 0-7-1-7-5 0-1.445.116-2.89.963-4V3L9 4.283C9.821 4.101 10.81 4 12 4s2.178.1 3 .283L18 3v2.952c.88 1.116 1 2.582 1 4.048 0 4-4 5-7 5Zm0 0c4 0 1.5 4 3.5 6M3 15c3 0 1.5 4 6 3"/></svg> CODEBASE VAULT
+              </strong>
+            </a>
+
+            <a href="https://www.instagram.com/harryarchivess" target="_blank" rel="noopener">
+              <strong>
+                <svg class="humbleicons hi-brand-instagram" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16.5 7.5v0M8 4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V8a4 4 0 0 1 4-4Zm7.5 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"/></svg> VISUAL FEED
+              </strong>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© 2026 HARRIS // BUILT WITH CURIOSITY</span>
+      <span>DESIGNED • DEVELOPED • ITERATED</span>
+      <span>SYS_STATUS: ONLINE • [ TOP ]</span>
+    </div>
+  </footer>
+
+  <div class="modal" id="projectModal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-box">
+      <button class="modal-close" id="modalClose" aria-label="Close modal">&times;</button>
+      
+      <p class="eyebrow" id="modalType">SYS_ID: 000 // NULL</p>
+      <h3 id="modalTitle">PROJECT TITLE</h3>
+
+      <div class="modal-media">
+        <div class="modal-image-wrapper">
+          <img id="modalMainImage" src="" alt="Project preview image">
+        </div>
+        <div class="modal-thumbnails" id="modalThumbnails"></div>
+      </div>
+
+      <p id="modalDescription"></p>
+      
+      <div class="modal-tags" id="modalTags"></div>
+
+      <div class="modal-footer-actions">
+        <a href="#" id="modalLiveBtn" target="_blank" rel="noopener" class="cyber-btn primary">LIVE DEMO</a>
+        <a href="#" id="modalRepoBtn" target="_blank" rel="noopener" class="cyber-btn">SOURCE CODE</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
